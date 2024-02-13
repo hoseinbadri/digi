@@ -1,0 +1,36 @@
+html {
+    direction: rtl;
+}
+
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+th {
+    background-color: darkslategray;
+    color: white;
+}
+tr:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-collapse: collapse;
+    box-sizing: border-box;
+
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+
+}
+
+.tool {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 5px;
+}
