@@ -1,10 +1,8 @@
 <?php
-// https://api.digikala.com/v1/search/?q=intel/2
-// https://api.digikala.com/v1/categories/electronic-devices/
-// https://sirius.digikala.com/v1/brand/29/?page=3
-// error_reporting(0);
+
+error_reporting(0);
 set_time_limit(0);
-session_start();
+
 
 define('BaseUrl' , 'https://sirius.digikala.com/v1/');
 

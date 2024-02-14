@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-use PhpOffice\PhpSpreadsheet\IOFactory;
+// use PhpOffice\PhpSpreadsheet\IOFactory;
 
 // $spreadsheet = new Spreadsheet();
 // $activeWorksheet = $spreadsheet->getActiveSheet();
@@ -54,7 +54,8 @@ for($i = 0; $i < $p; $i++) { // number of rows
         $activeWorksheet->setCellValue([$j+1, $i+1], $data[$i][$j]);
     }
 }
-
+$activeWorksheet->setCellValue([5, 2], "MAX");
+$activeWorksheet->setCellValue([5, 3], "=max(c:c)");
 
 $writer = new Xlsx($spreadsheet);
 $writer->save('test.xlsx');

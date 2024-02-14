@@ -17,6 +17,7 @@ require_once('config.php');
         <tr>
             <th>ID</th>
             <th>Brand Name</th>
+            <th>Image</th>
         </tr>
     
     <?php
@@ -26,6 +27,7 @@ require_once('config.php');
         e('<tr>');
         e('<td>' . $i . '</td>');
         e('<td>' . $name . '</td>');
+        e("<td><img width=50 src='{$brand->image}'></td>");
         e('</tr>');
     }
     ?>
